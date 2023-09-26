@@ -7,6 +7,46 @@
     <title>Sign-up-form</title>
 </head>
 <body>
-    <h1>Okay now we are ready to start</h1>
+    <div class="container">
+        <div class="title-block">
+            <div class="title"></div>
+        </div>
+        <div class="form-block">
+            <div class="top-description">This is not a real form! Stay in touch to hear about new designs and enter the poll to vote on the next VuduZoo Design. Create your VuduZoo account to save your preferences and make shopping faster!</div>   
+            <form action="get">
+                <h1>Lets Start!</h1>
+                <div class="form-row">
+                    <label for="first-name">*First Name</label>
+                    <input type="text" name="first-name" id="first-name" required/>
+
+                    <label for="last-name">*Last name</label>
+                    <input type="text" name="last-name" id="last-name" required/>
+                </div>
+
+                <div class="form-row">
+                    <label for="user-email">*Email</label>
+                    <input type="email" name="user-email" id="user-email" required />
+
+                    <label for="user-phone">Phone Number</label>
+                    <input type="number" name="user-phone" id="user-phone" />
+                </div>
+
+                <div class="form-row">
+                    <label for="user-pass">*Password</label>
+                    <input type="password" name="user-pass" id="user-pass" required />
+
+                    <label for="pass-confirm">Confirm Password</label>
+                    <input type="password" name="pass-confirm" id="pass-confirm" required/>
+                </div>
+
+                <label for="submit-btn">
+                    <input type="button" value="Create Account" />
+                </label>
+                
+            </form>
+
+            <p>Already a member? <a href="">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
