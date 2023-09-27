@@ -1,8 +1,218 @@
-* div {
-    border: 2px solid red;
+:root
+{
+	--color-dark: #0A2E36;
+	--color-vanilla: #F3DFA2;
+	--color-cyan: #7EBDC2;
+	--color-pink: #E4959E;
+
 }
 
-h1{
-    color: red;
+@font-face {
+	font-family: fingerpaint;
+	src: url(/Intermediate-practice/Form-Project/sign-up-form/fonts/webfontkit-20230926-142620/fingerpaint-regular-webfont.woff2);
+}
 
+@font-face {
+	font-family: overclock;
+	src: url(/Intermediate-practice/Form-Project/sign-up-form/fonts/webfontkit-20230926-142620/overlock-regular-webfont.woff2);
+}
+
+@font-face {
+	font-family: overclock-bold;
+	src: url(/Intermediate-practice/Form-Project/sign-up-form/fonts/webfontkit-20230926-142620/overlock-bold-webfont.woff2);
+}
+
+/* body div
+{
+	border: 2px solid blueviolet;
+} */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	display:flex;
+	justify-content: center;
+}
+
+.container
+{
+	width: clamp(700px, 80%, 1920px);
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	
+}
+
+.title-block
+{
+	flex: 1 0;
+	height: 100%;
+	background-image: url("/Intermediate-practice/Form-Project/sign-up-form/imgs/shirt-background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-position-x: -600px;
+	background-repeat:no-repeat;
+	color: whitesmoke;
+}
+
+.title
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	text-align: center;
+	margin-top: 200px;
+	height: 100px;
+	background-color: #0a2e3676;
+	
+}
+
+.title h1
+{
+	
+	font-family: "fingerpaint",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: clamp(3em, 3vw, 5em);
+}
+
+#img-cred
+{
+	position: absolute;
+	bottom: 0px;
+}
+
+
+
+.form-block
+{
+	flex: 2 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-color: whitesmoke;
+	font-family: "overclock", sans-serif;
+
+}
+
+.top-description h1
+{
+	font-family: "overclock-bold", sans-serif;
+	line-height: 1.5;
+	font-size: clamp(1em, 2vw, 1.3em);
+}
+
+.top-description
+{
+	
+	margin: 50px 0 30px 40px;
+	margin-right: clamp(15px, 10vw, 250px);
+}
+
+.data-entry
+{
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	gap: 10px; 
+	padding-bottom: 20px;
+
+	background-color: white;
+	-webkit-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.3);
+}
+
+form
+{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 500;
+}
+
+.form-row h1
+{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.form-row,
+.bottom-submit
+{
+	margin-right: clamp(20px, 10vw, 100px);
+	margin-left: 40px;
+}
+
+.form-row
+{
+	display: flex;
+	gap: 50px;
+}
+
+
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='number'],
+.form-row input[type='password']
+{
+	display: block;
+	height: 35px;
+	width: clamp(200px, 18vw, 400px);
+	padding: 5px 10px;
+	font-size: 16px;
+
+}
+
+input
+{
+	border: 1px solid var(--color-dark);
+	border-radius: 5px;
+}
+
+input:focus
+{
+	outline: 1px solid var(--color-dark);
+	background-color:#7ebec22e;
+	
+}
+
+input:invalid
+{
+	/* border-color: var(--color-pink); */
+}
+
+
+input[type='submit']
+{
+	padding: 15px 40px;
+	margin: 30px 0;
+
+	font-size: 20px;
+	font-weight: 600;
+	background-color: var(--color-cyan);
+	color: white;
+	border-radius: 8px;
+	border-color: var(--color-dark);
+	/* font-family: 'overclock-bold', sans-serif; */
+
+}
+
+.bottom-submit p
+{
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+a
+{
+	color: var(--color-cyan);
+	text-decoration: none;
 }
