@@ -9,17 +9,17 @@
 
 @font-face {
 	font-family: fingerpaint;
-	src: url(/Intermediate-practice/Form-Project/sign-up-form/fonts/webfontkit-20230926-142620/fingerpaint-regular-webfont.woff2);
+	src: url(./fonts/webfontkit-20230926-142620/fingerpaint-regular-webfont.woff2);
 }
 
 @font-face {
 	font-family: overclock;
-	src: url(/Intermediate-practice/Form-Project/sign-up-form/fonts/webfontkit-20230926-142620/overlock-regular-webfont.woff2);
+	src: url(./fonts/webfontkit-20230926-142620/overlock-regular-webfont.woff2);
 }
 
 @font-face {
 	font-family: overclock-bold;
-	src: url(/Intermediate-practice/Form-Project/sign-up-form/fonts/webfontkit-20230926-142620/overlock-bold-webfont.woff2);
+	src: url(./sign-up-form/fonts/webfontkit-20230926-142620/overlock-bold-webfont.woff2);
 }
 
 /* body div
@@ -54,7 +54,7 @@ body
 	position: relative;
 	flex: 1 0;
 	height: 100%;
-	background-image: url("/Intermediate-practice/Form-Project/sign-up-form/imgs/shirt-background.jpg");
+	background-image: url("./imgs/shirt-background.jpg");
 	background-size: cover;
 	background-position: center;
 	background-position-x: -600px;
